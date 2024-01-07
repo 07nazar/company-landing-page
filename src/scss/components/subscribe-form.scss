@@ -1,0 +1,72 @@
+.subscribe {
+  position: relative;
+  padding: 64px;
+  overflow: hidden;
+  background-color: $bg-color-form;
+  border-radius: 32px;
+  min-height: 372px;
+
+  @include breakpoint(md, max) {
+    padding: 64px 32px;
+  }
+  @include breakpoint(sm, max) {
+    padding: 48px 16px;
+  }
+  &__form {
+    position: relative;
+    z-index: 2;
+    max-width: 692px;
+    width: 100%;
+  }
+  &__title {
+    text-align: start;
+    color: $text-third-color;
+    margin-bottom: 16px;
+  }
+  &__subtitle {
+    text-align: start;
+    color: $text-third-color;
+    margin-bottom: 40px;
+    @include breakpoint(sm, max) {
+      margin-bottom: 20px;
+    }
+  }
+  &__controll {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @include breakpoint(sm, max) {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  &__input {
+    border-radius: 8px;
+    background: $color-white;
+    padding: 10px 8px 10px 12px;
+    font-size: $text-size-200;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    @include breakpoint(sm, max) {
+      width: 100%;
+    }
+  }
+  &__button {
+    @include breakpoint(sm, max) {
+      width: 100%;
+    }
+  }
+  &__decore {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.3;
+    @include breakpoint(lg, max) {
+      right: -15%;
+    }
+    @include breakpoint(sm, max) {
+      right: -35%;
+    }
+  }
+}

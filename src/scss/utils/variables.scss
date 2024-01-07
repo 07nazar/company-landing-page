@@ -1,0 +1,48 @@
+$breakpoints: (
+  sm: (
+    min: 576px,
+    max: 575.98px,
+  ),
+  md: (
+    min: 768px,
+    max: 767.98px,
+  ),
+  lg: (
+    min: 992px,
+    max: 991.98px,
+  ),
+  xl: (
+    min: 1200px,
+    max: 1199.98px,
+  ),
+  xxl: (
+    min: 1400px,
+    max: 1399.98px,
+  ),
+);
+
+// fonts
+$fontMain: 'Inter', sans-serif;
+
+// // font sizes
+$text-size-100: 12px;
+$text-size-150: 14px;
+$text-size-200: 16px;
+$text-size-250: 18px;
+$text-size-300: 20px;
+$text-size-350: 24px;
+$text-size-400: 28px;
+$text-size-500: 31px;
+$text-size-550: 36px;
+$text-size-600: 48px;
+
+// colors
+$text-primary-color: #344051;
+$text-secondary-color: #141c24;
+$text-third-color: #002966;
+$color-gray: #637083;
+$color-blue: #1a75ff;
+$button-bg-blue: #1a75ff;
+$color-white: #ffffff;
+$bg-color-form: #f0f6ff;
+$border-color: #e4e7ec;

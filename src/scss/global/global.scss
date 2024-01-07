@@ -1,0 +1,107 @@
+* {
+  font-family: $fontMain;
+  font-weight: 500;
+  font-size: $text-size-200;
+  color: $text-primary-color;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1236px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  @include breakpoint(xl, max) {
+    padding: 0 32px;
+  }
+  @include breakpoint(md, max) {
+    padding: 0 16px;
+  }
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+
+  &--blue {
+    background-color: $button-bg-blue;
+    color: $color-white;
+  }
+  &--outlined {
+    border-radius: 8px;
+    border: 1px solid #ced2da;
+  }
+
+  &--with-image {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.pin {
+  display: inline-block;
+  font-size: $text-size-150;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  padding: 0 10px;
+  border-radius: 150px;
+
+  &--blue {
+    background: #f0f6ff;
+    color: $color-blue;
+  }
+}
+
+.title {
+  text-align: center;
+  color: $text-secondary-color;
+  font-size: $text-size-550;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 122.222%;
+  @include breakpoint(sm, max) {
+    font-size: $text-size-400;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128.571%;
+  }
+}
+
+.subtitle {
+  color: $text-secondary-color;
+  font-size: $text-size-250;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155.556%;
+  @include breakpoint(sm, max) {
+    font-size: $text-size-200;
+    line-height: 150%;
+  }
+}
+
+.page-paddings {
+  @include breakpoint(sm, max) {
+    padding: 48px 0;
+  }
+  @include breakpoint(sm) {
+    padding: 64px 0;
+  }
+  @include breakpoint(lg) {
+    padding: 80px 0;
+  }
+}

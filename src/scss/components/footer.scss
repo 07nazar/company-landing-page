@@ -1,0 +1,134 @@
+.footer {
+  padding: 40px 0;
+  &__top {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $border-color;
+    @include breakpoint(lg, max) {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    max-width: 316px;
+    @include breakpoint(sm, max) {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  &__desc {
+    font-size: $text-size-200;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 32px;
+    @include breakpoint(sm, max) {
+      text-align: center;
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @include breakpoint(md, max) {
+      justify-content: unset;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint(sm, max) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 16px;
+      column-gap: 32px;
+      grid-template-areas:
+        'a b'
+        'c c'
+        'd d';
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &--contacts {
+      max-width: 238px;
+    }
+
+    @include breakpoint(md, max) {
+      margin-right: auto;
+      &--a {
+        grid-area: a;
+      }
+      &--b {
+        grid-area: b;
+      }
+      &--c {
+        grid-area: c;
+      }
+      &--d {
+        grid-area: d;
+      }
+    }
+  }
+  &__links-link {
+    white-space: nowrap;
+    @include breakpoint(lg, max) {
+      white-space: normal;
+    }
+  }
+  &__links-title {
+    color: $text-secondary-color;
+    font-size: $text-size-250;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 155.556%;
+  }
+  &__links-contacts {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__bottom {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__rights {
+    color: $text-secondary-color;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  &__bottom-links {
+  }
+  &__bottom-link {
+    font-weight: 400;
+    line-height: 150%;
+    color: $color-blue;
+
+    &:first-child::after {
+      vertical-align: middle;
+      margin: 0 16px;
+      display: inline-block;
+      background: $color-gray;
+      content: '';
+      width: 1px;
+      height: 16px;
+    }
+  }
+}

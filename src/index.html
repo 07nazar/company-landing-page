@@ -1,12 +1,28 @@
 <!doctype html>
 <html lang="en">
+  <!-- Head -->
   @@include('./partials/head.html', { title: "Home" })
   <body>
+    <!-- Header -->
     @@include('./partials/header.html')
+    <!-- Main -->
     <main>
-      <h1>Main</h1>
-      <img src="imgs/unnamed.png" />
+      <!-- Hero -->
+      @@include('./partials/hero.html')
+      <!-- Our Features -->
+      @@include('./partials/our-features.html')
+      <!-- Sass -->
+      @@include('./partials/sass.html')
+      <!-- Questions -->
+      @@include('./partials/questions.html')
+      <!-- News -->
+      @@include('./partials/news.html')
+      <!-- Subscribe form -->
+      @@include('./partials/subscribe-form.html')
+      <!-- Our clients -->
+      @@include('./partials/our-clients.html')
     </main>
+    <!-- Footer -->
     @@include('./partials/footer.html')
     <script src="./js/index.min.js"></script>
   </body>

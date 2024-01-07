@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  padding: 18px 0;
+  @include breakpoint(md, max) {
+    padding: 10px 0;
+  }
+  @include breakpoint(sm, max) {
+    padding: 8px 0;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+
+    &-text {
+      @include breakpoint(sm, max) {
+        display: none;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-right: 24px;
+
+  &__link {
+    cursor: pointer;
+  }
+  @include breakpoint(lg, max) {
+    gap: 12px;
+  }
+
+  @include breakpoint(md, max) {
+    display: none;
+  }
+}
+
+.burger {
+  border-radius: 8px;
+  border: 1px solid #ced2da;
+
+  @include breakpoint(sm, max) {
+    width: 36px;
+    height: 36px;
+    padding: 7.2px;
+
+    svg {
+      width: 21.6px;
+      height: 21.6px;
+    }
+  }
+
+  @include breakpoint(md, max) {
+    width: 44px;
+    height: 44px;
+    padding: 8.8px;
+
+    svg {
+      width: 26.4px;
+      height: 26.4px;
+    }
+  }
+
+  @include breakpoint(md, min) {
+    display: none;
+  }
+}
