@@ -108,6 +108,11 @@
     padding-top: 32px;
     display: flex;
     justify-content: space-between;
+    @include breakpoint(md, max) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   }
   &__rights {
     color: $text-secondary-color;

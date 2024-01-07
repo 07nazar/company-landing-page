@@ -12,7 +12,12 @@
     gap: 32px;
     margin-bottom: 40px;
     @include breakpoint(md, max) {
+      max-width: 175px;
+      align-items: flex-start;
       flex-direction: column;
+      justify-content: flex-start;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   &__feature {
